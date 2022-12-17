@@ -158,6 +158,9 @@ All shortcuts start with ``CTRL + ALT + SHIFT``, just like Moonlight
 
 Application List
 ----------------
+.. Warning:: Applications will run under the same "user" that sunshine is executed as. If you run sunshine as a
+   service in Windows, sunshine and applications will be run as the ``SYSTEM`` user.
+
 - Applications should be configured via the web UI.
 - A basic understanding of working directories and commands is recommended.
 - You can use Environment variables in place of values
@@ -166,6 +169,7 @@ Application List
 - ``env`` - Adds or overwrites Environment variables for the commands/applications run by Sunshine
 - ``"Variable name":"Variable value"``
 - ``apps`` - The list of applications
+- Advanced users may want to edit the application list manually. The format is ``json``.
 - Example application:
    .. code-block:: json
 
@@ -214,3 +218,11 @@ Considerations
 - In addition to the apps listed, one app "Desktop" is hardcoded into Sunshine. It does not start an application,
   instead it simply starts a stream.
 - For the Linux flatpak you must prepend commands with ``flatpak-spawn --host``.
+
+Tutorials
+---------
+Tutorial videos are available `here <https://www.youtube.com/playlist?list=PLMYr5_xSeuXAbhxYHz86hA1eCDugoxXY0>`_.
+
+.. admonition:: Community!
+
+   Tutorials are community generated. Want to contribute? Reach out to us on our discord server.
